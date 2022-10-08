@@ -8,11 +8,11 @@ Points to remember:
 2. We have to fetch each word from the given string. For that we have to split the words by space. To split the words we have to use split() methods that returns the array of strings (It splits the given string into substrings).
 
 ################################################# Program ########################################################
+
+
 import java.util.HashMap;
 import java.util.Map;
-
 public class CountWords {
-
 	public static void main(String[] args) {
 
 		String str = "I am learning learning java java java programming";
