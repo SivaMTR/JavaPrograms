@@ -2,7 +2,7 @@
 
 Program 1 
 
-Findout the occurence of the words in given sentance. ex: "I am learning learning java java java programing".
+Findout the occurence/duplicate of the words in given sentance. ex: "I am learning learning java java java programing".
 
 Solution:
 Points to remember:
@@ -98,6 +98,36 @@ public class DuplicateChar {
 }
 
 
+Program 4 :
+
+Findout given two strings are ANAGRAM or not?
+
+Solution:
+1. First we have to convert given strings into lower case using toLowerCase() method and then use toCharArray() method to convert given string into array of characters.
+2. Then sort the converted arrays using Array.sort() method. 
+3. Compare two arrays.
+
+import java.util.Arrays;
+
+public class Anagram {
+	public static void main(String[] args){
+		
+		String str1 = "army";
+		String str2 = "mary";
+		
+		char[]  arr1 = str1.toLowerCase().toCharArray();
+		char[]  arr2 = str2.toLowerCase().toCharArray();
+		
+		Arrays.sort(arr1);
+		Arrays.sort(arr2);
+		
+		if(Arrays.equals(arr1, arr2)){
+			System.out.println("Given strings are Anagram");
+		}else{
+			System.out.println("Given strings are not Anagrams");
+		}
+	}
+}
 
 
 
