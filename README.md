@@ -41,7 +41,7 @@ public class CountWords {
 
 Program 2:
 
-To findout specific characters occurence in the given string.
+Findout specific characters occurence in the given string.
 
 Solution:
 We have to replace specific charecter 'a' with blank "" using replaceAll method and then substract the leght of actual string with result string lenght.
@@ -61,7 +61,13 @@ public class CountCharOccurence {
 }
 
 
+Program 3:
 
+Findout the duplicate character in the given string.
+
+Solution:
+1. Here we need to store key value pair (character and count) so we have to use Hashmap.
+2. To convert given string into array of characters we have to use the toCharArray() method which is provided by String class. 
 
 
 
