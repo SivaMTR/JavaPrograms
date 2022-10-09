@@ -137,8 +137,11 @@ Find out first non repeated character in the given string.
 Solution:
 1. We have to use LinkHashMap. It will maintain insertion order. 
 
+
 import java.util.LinkedHashMap;
+
 import java.util.Map;
+
 import java.util.Map.Entry;
 
 public class FirstNonRepeatedChar {
