@@ -69,6 +69,35 @@ Solution:
 1. Here we need to store key value pair (character and count) so we have to use Hashmap.
 2. To convert given string into array of characters we have to use the toCharArray() method which is provided by String class. 
 
+package ImpPrograms;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class DuplicateChar {
+	public static void main(String[] args) {
+
+		String str = "Laptop";
+		int count = 1;
+
+		Map<Character, Integer> map = new HashMap<Character, Integer>();
+		char[] arr = str.toCharArray();
+
+		for (int i = 0; i < arr.length; i++) {
+			if (!map.containsKey(arr[i])) {
+				map.put(arr[i], count);
+			} else {
+				map.put(arr[i], map.get(arr[i]) + 1);
+			}
+		}
+		for (Character x : map.keySet()) {
+			if (map.get(x) > 1)
+				System.out.println("The count of the duplicate char " + x + " is =" + map.get(x));
+		}
+	}
+}
+
+
 
 
 
