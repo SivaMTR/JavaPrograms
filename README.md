@@ -173,7 +173,43 @@ public class FirstNonRepeatedChar {
 	}
 }
 
+Program 6:
 
+Reverse the given string.
+
+Solution:
+We can revers the string in two ways.
+
+1. Using String buffer
+
+public class ReverseStrgUsingStrgBuffer {
+	 public static void main(String[] args){
+		 
+		 String str = "Automation";
+		 
+		 StringBuffer sb = new StringBuffer(str);
+		 
+		 String result = sb.reverse().toString();
+		 System.out.println(result);
+	 }
+}
+
+2. Without using String buffer
+
+
+public class ReverseStrgWithoutUsingStrgBuffer {
+	public static void main(String[] args){
+		
+		String str ="Automation";
+		
+		char[] arr= str.toCharArray();
+		
+		for(int i=arr.length-1;i>=0;i--){
+			
+			System.out.println(arr[i]);
+		}
+	}
+}
 
 
 
