@@ -180,7 +180,7 @@ Reverse the given string.
 Solution:
 We can revers the string in two ways.
 
-1. Using String buffer
+        1. Using String buffer
 
 public class ReverseStrgUsingStrgBuffer {
 	 public static void main(String[] args){
@@ -194,7 +194,7 @@ public class ReverseStrgUsingStrgBuffer {
 	 }
 }
 
-2. Without using String buffer
+        2. Without using String buffer
 
 
 public class ReverseStrgWithoutUsingStrgBuffer {
@@ -210,6 +210,44 @@ public class ReverseStrgWithoutUsingStrgBuffer {
 		}
 	}
 }
+
+Program 7:
+
+How to extract last four or first four characters?
+
+Solution:
+
+We have to use substring method to extract specific characters from the given string.
+
+public class Substring {
+
+	public static void main(String[] args) {
+
+		String str = "www.facebook.com";
+
+		// to findout first four characters
+		String result1 = str.substring(0, 4);
+
+		System.out.println(result1);
+
+		// to findout lastfour characters
+
+		String result2 = str.substring(str.length() - 4, str.length());
+
+		System.out.println(result2);
+
+		// to findout website name
+		String result3 = str.substring(4, str.length()-4);
+
+		System.out.println(result3);
+
+	}
+
+}
+
+
+
+
 
 
 
